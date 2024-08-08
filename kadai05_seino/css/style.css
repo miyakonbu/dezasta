@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+body {
+  background: lightgray;
+}
+
+header {
+  position: relative;
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7% 0 3%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header_logo {
+  width: 226px;
+}
+
+.pc_nav ul {
+  display: flex;
+  gap: 54px;
+}
+
+.pc_nav ul li {
+  width: 105px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
