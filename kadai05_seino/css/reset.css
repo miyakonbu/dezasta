@@ -5,9 +5,7 @@
 /*利用するタグによってこちらの内容は増やす*/
 
 html,
-body,
 h1,
-h2,
 h3,
 p,
 dl,
@@ -16,6 +14,16 @@ dd,
 ul {
   list-style: none;
 }
+
+h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* body {
+  text-align: center;
+} */
 
 li {
   margin: 0;
@@ -35,4 +43,20 @@ a {
   text-decoration: none;
   /*色を消す*/
   color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
 }

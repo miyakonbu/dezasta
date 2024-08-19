@@ -4,6 +4,7 @@
   max-width: 960px;
   background-color: #eeeeee;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 
 .header {
@@ -18,34 +19,33 @@ h1 {
 h2 {
   color: #339999;
   border-left: 7px solid #339999;
-  margin: 7px auto;
+  margin: 10px 5px;
 }
 
 p {
-  margin: 5px;
+  margin: 10px 5px;
 }
 
 .service {
   display: flex;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .serviceimage {
-  /* flex-direction: column;
-  align-items: flex-start; */
-  /* max-width: 100%; */
-  padding: 0 10px;
+  margin: 0 5px;
+  background: white;
 }
 
 @media screen and (max-width: 400px) {
   .service {
     flex-direction: column;
+    padding: 0 10px;
   }
-  image {
+  img {
     width: 100%;
   }
   .serviceimage {
     width: 100%;
+    margin: 10px 0px;
   }
 }
