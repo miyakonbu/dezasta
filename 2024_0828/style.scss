@@ -1,0 +1,13 @@
+$main_color: #41ced0;
+
+.about {
+    font-size: 18px;
+    color: $main_color;
+    span {
+        font-size: 20px;
+    }
+    &::before {
+        content: '議事要素'；      
+    }
+    
+}

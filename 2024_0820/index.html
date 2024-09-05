@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第5回</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .color {
+            color: red;
+        }
+
+        .btn {
+            background: orange;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .toggle {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">初めて</h1>
+    <button type="button" class="btn">ボタン</button>
+    <script>
+        $(function () {
+            // $('h1').css('color', '#f00')
+            // $('.heading').hide(3000)
+            $('.heading').addClass('color')
+            $('.btn').on('click', function () {
+                // $('.heading').fadeToggle()
+                $('.heading').toggleClass('toggle')
+            })
+
+        })
+    </script>
+</body>
+
+</html>

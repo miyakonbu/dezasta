@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.about {
+  font-size: 18px;
+  color: #41ced0;
+}
+.about span {
+  font-size: 20px;
+}
+.about::before {
+  content: "議事要素" ；;
+}/*# sourceMappingURL=style.css.map */
