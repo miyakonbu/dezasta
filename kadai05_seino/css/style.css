@@ -55,7 +55,7 @@ header {
 
 h2.aboutus {
   width: 273px;
-  margin: 55px 0 50px 0;
+  margin: 40px 0 40px 0;
 }
 
 h2.menu {
@@ -102,7 +102,7 @@ P.sample23 {
   letter-spacing: 0.1em;
 }
 
-P.sample23news {
+.news {
   font-size: 23px;
   line-height: 1;
   margin: 10px 0;
@@ -143,6 +143,7 @@ P.sample82 {
 }
 
 .aboutuscontainer > img {
+  /* .aboutuscontainer picture { */
   border-bottom-right-radius: 82px;
   width: 50%;
 }
@@ -204,15 +205,15 @@ P.sample82 {
   margin: 0 auto;
 }
 
+.news {
+  display: flex;
+  gap: 50px;
+}
+
 .newstext {
   width: fit-content;
   margin: 0 auto;
   padding: 25px 0;
-}
-
-.news {
-  display: flex;
-  gap: 50px;
 }
 
 #access_map iframe {
@@ -251,7 +252,8 @@ P.copyright {
   text-align: center;
   background: #fff;
   margin: 0 0;
-  padding-bottom: 72px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .to_top {
@@ -383,15 +385,22 @@ P.copyright {
 
   .aboutuscontainer {
     flex-direction: column;
-    /* display: flex;
-    flex-wrap: column; */
-    justify-content: center;
-    /* align-items: center; */
+    /* justify-content: center; */
+    align-items: center;
   }
 
   .aboutuscontainer > img {
     width: 100%;
     border-bottom-right-radius: 0px;
+    /* margin-bottom: 32px; */
+  }
+
+  .aboutuscontainer > picture {
+    margin-bottom: 20px;
+  }
+
+  .aboutustext {
+    display: contents;
   }
 
   P.sample30 {
@@ -415,8 +424,7 @@ P.copyright {
   P.sample44 {
     font-size: 36px;
     line-height: 1.38;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    text-align: left;
   }
 
   P.sample16 {
@@ -425,16 +433,14 @@ P.copyright {
     margin: 0 20px;
   }
 
-  .aboutustext {
+  /* .aboutustext {
     width: 100%;
     margin: 0 auto;
-  }
+  } */
 
   .menuarea {
     flex-direction: column;
-    /* flex-wrap: column; */
     justify-content: center;
-    /* align-items: center; */
   }
   .menuimage {
     margin: 0 auto;
@@ -442,15 +448,16 @@ P.copyright {
     width: 90%;
   }
 
+  .menuimage img {
+    border-top-right-radius: 41px;
+    width: 100%;
+  }
+
   P.sample17 {
-    display: inline-block;
-    width: 300px;
     margin: 0;
   }
 
   P.sample38 {
-    display: inline-block;
-    width: 300px;
     margin: 0;
     top: -12px;
   }
@@ -476,15 +483,26 @@ P.copyright {
     padding: 0 15px;
   }
 
+  .newstext {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
   .news {
-    display: block;
-    gap: 50px;
+    flex-direction: column;
+    width: fit-content;
+    font-size: 16px;
+    gap: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   h2.aboutus {
     width: 160px;
-    margin: 55px auto;
-    order: 0;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    order: -1;
   }
 
   h2.menu {
@@ -537,5 +555,10 @@ P.copyright {
     width: fit-content;
     margin: 32px 0 45px 0;
     /* margin-left: 60px; */
+  }
+
+  P.copyright {
+    padding-top: 18px;
+    padding-bottom: 25px;
   }
 }
